@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Medicamentos</title>
+    <!-- Agrega los enlaces a los estilos de Bootstrap -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    />
+</head>
+<body>
+    <!--INICIO NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MSF</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Quiénes Somos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--FIN NAVBAR-->
+    <div class="container my-5">
+        <h1 class="text-center">Modificar Información de Medicamento</h1>
+        <hr/>
+
+        <div class="d-flex justify-content-between align-items-center">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar Medicamento" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+            
+        </div>
+    
+        <table class="table table-bordered table-striped table-hover">
+            <thead>
+                <tr>
+                    <th class="text-center"scope="col">Medicamento</th>
+                    <th class="text-center"scope="col">Cantidad</th>
+                    <th class="text-center"scope="col">Categoría</th>
+                    <th class="text-center"scope="col">Disponible</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                    <td>Paracetamol</td>
+                    <td>12</td>
+                    <td>Analgesico</td>
+                    <td><input type="checkbox" checked></td>
+            </tbody>
+
+           <tbody>
+                    <td>Loratadina</td>
+                    <td>15</td>
+                    <td>Antialergico</td>
+                    <td><input type="checkbox" checked></td>
+            </tbody>   
+
+
+    
+    
+        </table>
+        <button type="button" class="btn btn-danger btn-lg float-right">Eliminar Medicamento</button>
+        <button type="button" class="btn btn-primary btn-lg float-right">Modificar Medicamento</button>
+        <button type="button" class="btn btn-success btn-lg float-right">Agregar Medicamento</button>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    </div>
+</body>
+
+</body>
+</html>

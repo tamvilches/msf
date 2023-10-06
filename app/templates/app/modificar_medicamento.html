@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modificar Medicamento</title>
+    <!-- Agrega los enlaces a los estilos de Bootstrap -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    />
+</head>
+<div>
+    <!--INICIO NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MSF</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+        <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Quiénes Somos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--FIN NAVBAR-->
+    
+      <div class="container my-5">
+        <h1 class="text-center">Modificar Medicamento</h1>
+
+    <hr/>
+
+    <form class="form">
+    <div class="text-bg-secondary p-3">
+        <div class="row">
+        <!-- columna izquierda -->
+        
+        <div class="col-md-6">
+            <div class="mb-3">
+            <label for="nombre_med" class="form-label">Nombre de Medicamento</label>
+            <select id="nombre_med" name="nombre_med" required>
+                <option value="">-Seleccionar-</option>
+                <option value="med1">Loratadina</option>
+                <option value="med2">Paracetamol</option>
+                <option value="med3">Amoxicilina</option>
+            </select>
+            </div>
+            <div class="mb-3">
+            <label for="nombre_med" class="form-label">Medición: </label>
+            <select id="nombre_med" name="nombre_med" required>
+                <option value="">-Seleccionar-</option>
+                <option value="med1">Mg</option>
+                <option value="med2">Ml</option>
+                <option value="med3">Kg</option>
+            </select>
+            </div>
+            <div class="mb-3">
+            <label for="expired_date" class="form-label" required>Fecha de Vencimiento: </label>
+            <input
+                type="date"
+                class="form-control"
+                id="expired_date"
+                aria-describedby="expired_date"
+                required/>
+            </div>
+            <div class="mb-3">
+            <label for="lote" class="form-label" required>N° de Lote: </label>
+            <input
+                type="text"
+                class="form-control"
+                id="lote"
+                aria-describedby="lote"
+                required/>
+            </div>
+            <div class="mb-3">
+            <label for="categoria" class="form-label">Categoría: </label>
+            <select id="categoria" name="categoria" required>
+                <option value="">-Elegir-</option>
+                <option value="Usuario">Antialergico</option>
+                <option value="Administrador">Antibiotico</option>
+                <option value="Administrador">Antinflamatorio</option>
+            </select>
+            </div>
+       </div>
+        <!-- columna derecha -->
+        <div class="col-md-6">
+            <div class="mb-3">
+            <label for="nombre_med" class="form-label">Dosis del Medicamento: </label>
+            <input
+                type="text"
+                class="form-control"
+                id="nombre_med"
+                aria-describedby="nombre_med"
+                required/>
+            </div>
+            <div class="mb-3">
+            <label for="tipo_med" class="form-label">Tipo: </label>
+            <select id="tipo_med" name="tipo_med" required>
+                <option value="">-Seleccionar-</option>
+                <option value="tipo1">Intravenoso</option>
+                <option value="tipo2">Intramuscular</option>
+                <option value="tipo3">Oral</option>
+            </select>
+            </div>          
+            <div class="mb-3">
+            <label for="cantidad_med" class="form-label">Cantidad: </label>
+            <input
+                type="text"
+                class="form-control"
+                id="cantidad_med"
+                aria-describedby="emailHelp"
+                required />
+            </div>
+            <div class="mb-3">
+            <label for="laboratorio" class="form-label">Laboratorio: </label>
+            <input
+                type="text"
+                class="form-control"
+                id="laboratorio"
+                aria-describedby="laboratorio"
+                required/>
+            </div>
+            <div class="mb-3">
+            <label for="lugar" class="form-label">Lugar de Almacenamiento: </label>
+            <select id="lugar" name="lugar" required>
+                <option value="">-Elegir-</option>
+                <option value="lugar1">Bodega</option>
+                <option value="lugar2">Vitrina</option>
+            </select>
+            </div>
+        </div>
+        </div>
+        <div class="d-flex justify-content-center gap-2 col-6 mx-auto">
+        <button type="submit" class="btn btn-danger">Cancelar</button>
+        <button type="submit" class="btn btn-success">Modificar</button>
+        </div>
+    </form>
+    </div>
+
+    <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>-->
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+
+/* estilo.css */
+.custom-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .custom-card {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ccc;
+    margin: 0 60px;
+  }
