@@ -154,6 +154,6 @@ cython_debug/
 .vscode
 
 #PyCache
-app/__pycache__/
-msf/__pycache__/
+msf\app\__pycache__
+msf\msf\__pycache__
 
