@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSF Templates</title>
-</head>
-<body>
-    <h2>Home Prueba Para probar github cdcdc</h2>
-</body>
-</html>
+{% extends "app/base.html" %}
+
+{% block title %}
+Mi Página - {{ block.super }}
+{% endblock %}
+
+{% block content %}
+<p>Este es el contenido de mi página.</p>
+{% endblock %}
