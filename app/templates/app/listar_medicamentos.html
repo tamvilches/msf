@@ -1,71 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lista de Medicamentos</title>
-    <!-- Agrega los enlaces a los estilos de Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    />
-</head>
-<body class="bg-info bg-opacity-25">
-    <!-- INICIO NAVBAR -->
-<nav class="navbar navbar-expand-lg bg-warning">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">MSF</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Iniciar Sesión</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Rol
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Crear Rol</a></li>
-            <li><a class="dropdown-item" href="#">Listar Rol</a></li>
-            <li><a class="dropdown-item" href="#">Eliminar Rol</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Gestión de Medicamentos
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Agrager Medicamento</a></li>
-            <li><a class="dropdown-item" href="#">Listar Medicamento</a></li>
-            <li><a class="dropdown-item" href="#">Modificar Medicamento</a></li>
-            <li><a class="dropdown-item" href="#">Buscar Medicamento</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Quiénes Somos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Noticias</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<!-- FIN NAVBAR -->
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block contenido %}
     <div class="container my-5">
         <h1 class="text-center">Modificar Información de Medicamento</h1>
         <hr/>
@@ -83,10 +19,10 @@
         <table class="table table-bordered table-striped table-hover">
             <thead>
                 <tr>
-                    <th class="text-center"scope="col">Medicamento</th>
-                    <th class="text-center"scope="col">Cantidad</th>
-                    <th class="text-center"scope="col">Categoría</th>
-                    <th class="text-center"scope="col">Disponible</th>
+                    <th class="text-center table-primary" scope="col">Medicamento</th>
+                    <th class="text-center table-primary" scope="col">Cantidad</th>
+                    <th class="text-center table-primary" scope="col">Categoría</th>
+                    <th class="text-center table-primary" scope="col">Disponible</th>
                 </tr>
             </thead>
     
@@ -104,9 +40,6 @@
                     <td><input type="checkbox" checked></td>
             </tbody>   
 
-
-    
-    
         </table>
         <button type="button" class="btn btn-danger btn-lg  mb-2 mt-2 float-right">Eliminar Medicamento</button>
         <button type="button" class="btn btn-primary btn-lg mb-2 mt-2 float-right">Modificar Medicamento</button>
@@ -114,17 +47,4 @@
       </div>
     </div>
   </div>
-
-        <!-- FOOTER -->
-  <footer class="bg-primary text-center text-white p-3 fixed-bottom">
-    <p class="mb-0">Desarrollado por JYNNEOS, derechos reservados.</p>
-    <p class="mb-0">Año 2023, Santiago, Chile </p>
-  </footer>
-    <!-- FIN FOOTER -->
-    <!-- JS de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    </div>
-</body>
-
-</body>
-</html>
+{% endblock %}

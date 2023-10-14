@@ -1,9 +1,12 @@
-{% extends "app/base.html" %}
+{% extends 'app/base.html' %}
+{% load static %}
 
-{% block title %}
-Mi Página - {{ block.super }}
-{% endblock %}
 
-{% block content %}
-<p>Este es el contenido de mi página.</p>
+{% block contenido %}    
+<div class="container my-5">
+    <h1 class="text-center">Home</h1>
+    <hr />
+        
+</div>
+        
 {% endblock %}
