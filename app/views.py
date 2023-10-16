@@ -48,3 +48,6 @@ def home_tecnico(request):
 def home_quimico(request):
     return render(request, 'app/home_quimico.html')
 
+def quienes_somos(request):
+    return render(request, 'app/quienes_somos.html')
+

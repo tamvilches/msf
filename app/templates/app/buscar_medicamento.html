@@ -3,28 +3,29 @@
 
 
 {% block contenido %}
-<!-- INICIO TARJETA -->
 <div class="container my-5">
-  <div class="row justify-content-center"> <!-- Centrar la fila -->
-      <div class="col-md-4"> <!-- Controlar el tamaño de la tarjeta -->
-        <div class="card mb-6 text-bg-secondary px-4">
-          <div class="mb-8"> 
-          <img src="{% static 'app/img/farmacoprueba.jpeg' %}" class="card-img-top mt-2 rounded"  alt="Imagen del medicamento">
-          </div>
-          <div class="card-body text-black">
-            <h5 class="card-title text-center">Información del medicamento</h5>
-            <p class="card-text text-center">Nombre del Medicamento</p>
-            <ul class="text-left">
-              <li>Se encuentra en: Antidepresivos - Columna 4</li>
-              <li>Fecha de vencimiento: 31-12-2023</li>
-              <li>Tipo: Comprimido</li>
-              <li>Cantidad Disponible: 1000 Comprimidos</li>
-              <li>Laboratorio: Hetero</li>
-              <li>Lote: 4K5852S</li>
-            </ul>
-          </div>
+  <h1 class="card-header text-center">Búsqueda Medicamento</h1>
+        <hr />
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card text-bg-secondary custom-card">
+        <div class="text-center">
+          <img src="{% static 'app/img/farmacoprueba.jpeg' %}" class="card-img-top mt-2 rounded p-3" alt="Imagen del medicamento">
+        </div>
+        <div class="card-body text-black">
+          <h5 class="card-title text-center">Información del medicamento</h5>
+          <p class="card-text text-center">Nombre del Medicamento</p>
+          <ul class="text-left">
+            <li>Se encuentra en: Antidepresivos - Columna 4</li>
+            <li>Fecha de vencimiento: 31-12-2023</li>
+            <li>Tipo: Comprimido</li>
+            <li>Cantidad Disponible: 1000 Comprimidos</li>
+            <li>Laboratorio: Hetero</li>
+            <li>Lote: 4K5852S</li>
+          </ul>
         </div>
       </div>
     </div>
+  </div>
 </div>
 {% endblock %}

@@ -14,7 +14,7 @@
     <!-- INICIO NAVBAR -->
 <nav class="navbar navbar-expand-lg bg-warning">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">MSF</a>
+    <a class="navbar-brand">MSF</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -29,40 +29,30 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Iniciar Sesión</a>
+          <a class="nav-link active" href="{% url 'autenticar' %}">Iniciar Sesión</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Rol
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Crear Rol</a></li>
-            <li><a class="dropdown-item" href="#">Listar Rol</a></li>
-            <li><a class="dropdown-item" href="#">Eliminar Rol</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Gestión de Medicamentos
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Agregar Medicamento</a></li>
-            <li><a class="dropdown-item" href="#">Listar Medicamento</a></li>
-            <li><a class="dropdown-item" href="#">Modificar Medicamento</a></li>
-            <li><a class="dropdown-item" href="#">Buscar Medicamento</a></li>
+            <li><a class="dropdown-item" href="{% url 'agregar_medicamento' %}">Agregar Medicamento</a></li>
+            <li><a class="dropdown-item" href="{% url 'listar_medicamentos' %}">Listar Medicamento</a></li>
+            <li><a class="dropdown-item" href="{% url 'modificar_medicamento' %}">Modificar Medicamento</a></li>
+            <li><a class="dropdown-item" href="{% url 'buscar_medicamento' %}">Buscar Medicamento</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Quiénes Somos</a>
+          <a class="nav-link active" href="{% url 'despacho' %}">Despachos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Noticias</a>
+          <a class="nav-link active" href="{% url 'reportes' %}">Reportes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Prueba</a>
+          <a class="nav-link active" href="{% url 'quienes_somos' %}">Quiénes Somos</a>
         </li>
       </ul>
     </div>

@@ -13,11 +13,11 @@
           <hr />
           <form>
             <div class="form-floating mb-3 ">
-              <input type="email" class="form-control" id="emailUsuarioLogin" placeholder="Email">
+              <input type="email" class="form-control" id="emailUsuarioLogin" placeholder="Ejemplo: usuario@example.com">
               <label for="floatingInput">Email</label>
             </div>
             <div class="form-floating black-text">
-              <input type="password" class="form-control" id="PasswordLogin" placeholder="Password">
+              <input type="password" class="form-control" id="PasswordLogin" placeholder="Ejemplo: tu_contraseña">
               <label for="floatingPassword">Contraseña</label>
             </div>
             <div class="d-grid gap-2 col-6 mx-auto">
@@ -27,11 +27,7 @@
             </div>
           </form>
           <p class="mt-3">
-            <a href="#" class="text-white text-dark-hover">¿Olvidaste tu Contraseña?</a>
-          </p>
-          <p>
-            <a href="#" class="text-white text-dark-hover">Ir a Home</a> |
-            <a href="#" class="text-white text-dark-hover">Regístrate</a>
+            <a href="{% url 'recuperar_password' %}" class="text-white text-dark-hover">¿Olvidaste tu Contraseña?</a>
           </p>
         </div>
       </div>

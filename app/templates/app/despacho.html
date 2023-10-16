@@ -1,8 +1,12 @@
-{% extends 'app/base.html' %} {% load static %} {% block contenido %}
+{% extends 'app/base.html' %} 
+
+{% load static %} 
+
+{% block contenido %}
 <!-- INICIO FORMULARIO -->
 <div class="container my-5">
-  <h2 class="text-center">Despacho de Fármacos</h2>
-  <hr />
+  <h1 class="card-header text-center">Despacho de Fármacos</h1>
+        <hr />
   <div class="container d-flex justify-content-center align-items-center">
     <div class="card text-bg-secondary custom-card col-12 p-4 m-2">
       <div class="text-center">
@@ -121,6 +125,7 @@
               <option value="80">80 unidades</option>
               <!-- Agrega más opciones según sea necesario -->
             </select>
+            <hr />
           </div>
           <div class="col-md-12 d-flex justify-content-center mt-4">
             <button type="submit" class="btn btn-primary btn-lg">Enviar</button>

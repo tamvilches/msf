@@ -1,0 +1,70 @@
+{% extends 'app/base.html' %} 
+
+{% load static %} 
+
+{% block contenido %}
+<!-- INICIO FORMULARIO -->
+<div class="container my-5">
+    <h1 class="text-center">Quiénes Somos</h1>
+      <hr/>
+      <h1 class="mb-4 text-center text-secondary mt-5">Acerca de nosotros</h1>
+      <!-- Imagen centrada -->
+    <div class="text-center">
+        <img src="{% static 'app/img/jynneosprueba.jpeg' %}" class="img-fluid rounded mb-4" alt="Descripción de la imagen">
+    </div>
+    <hr/>
+      <p><em>
+        Somos un grupo de estudiantes del Instituto Duoc UC, de la carrera Ingeniería Informática, 
+        dedicados a explorar y aplicar las últimas tecnologías y metodologías en el campo de la informática.
+
+        Actualmente, estamos inmersos en un emocionante proyecto donde estamos desarrollando un software 
+        que busca abordar desafíos relevantes de la sociedad actual. A través de nuestra colaboración, 
+        estamos trabajando arduamente para crear soluciones que puedan ayudar a mejorar
+        la vida de las personas y en el mundo que nos rodea.
+    </em></p>
+    <hr/>
+        <h1 class="mb-4 text-center">JYNNEOS</h1>
+        <div class="row p-5">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-bg-warning">
+                        <h5 class="card-title">Mirtza Badilla</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Lider de Proyecto - Programador</h6>
+                        <p class="card-text">Breve descripción o biografía del miembro del equipo.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite este bloque para cada miembro del equipo -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-bg-warning">
+                        <h5 class="card-title">Yonathan Maldonado</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Programador - Analista de Pruebas QA</h6>
+                        <p class="card-text">Breve descripción o biografía del miembro del equipo.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin del bloque repetible -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-bg-warning">
+                        <h5 class="card-title">Daniel Soto</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Programador - Diseñador</h6>
+                        <p class="card-text">Breve descripción o biografía del miembro del equipo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-bg-warning">
+                        <h5 class="card-title">Tamara Vilches</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Programador - Analista Base de Datos</h6>
+                        <p class="card-text">Breve descripción o biografía del miembro del equipo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+      {% endblock %}
+    
