@@ -42,3 +42,9 @@ def agregar_medicamento(request):
 def modificar_medicamento(request):
     return render(request, 'app/modificar_medicamento.html')
 
+def home_tecnico(request):
+    return render(request, 'app/home_tecnico.html')
+
+def home_quimico(request):
+    return render(request, 'app/home_quimico.html')
+
